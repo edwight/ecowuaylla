@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="Ecowuaylla"/>
+	<title>Ecowuaylla|HOME</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="./css/owl.carousel.min.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="./css/owl.theme.default.min.css" type="text/css" media="all" />
+
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" href="css/fontawesome-all.css">
+</head>
+<body>
+	<div class="container wrapper">
+		<div class="header_bg">
+		<div class="container">
+			<div class="top_bg">
+				<div class="left address">
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					<span>916 361 214</span>
+					<i class="fas fa-envelope"></i>
+					<span>ecowuayalla@info.com</span>
+				</div>
+				<div class="right address">
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+					<span>Av. Cusco 415, Ayacucho Peru</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="menu">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+			    aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="nav-logo">
+				
+			</div>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto text-center mr-lg-5">
+					<li class="nav-item active mr-lg-2 mb-lg-0 mb-2">
+						<a class="nav-link" href="./index.html">NOSOTROS
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item mr-lg-2 mb-lg-0 mb-2">
+						<a class="nav-link" href="./product.html">CATÁLOGO</a>
+					</li>
+					<li class="nav-item mr-lg-2 mb-lg-0 mb-2">
+						<a class="nav-link" href="./contacto.html">CONTACTOS</a>
+					</li>
+					
+				</ul>
+			</div>
+		</nav>
+	</div>
+	
+	<section class="figure-area" style="background-image: url(./images/header_comunication.png);">
+		
+	</section>
+	<section class="contact">
+		<form action="partial/formulario/save_form.php" method="post">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="title">
+							<p><i class="fa fa-phone" aria-hidden="true"></i>916 361 214</p>
+							<p><i class="fas fa-envelope" aria-hidden="true"></i>ecowuayalla@info.com</p>
+						</div>
+						
+					</div>
+					<div class="col-sm-3">
+						<input placeholder="Nombres" class="form-box" required="required" name="name" type="text">
+						<input placeholder="Telefono" class="form-box" required="required" name="phone" type="text">
+					</div>
+					<div class="col-sm-3">
+						<input class="form-box" placeholder="Email" name="mail" required="required" type="email">
+						<input name="subject" id="subject" class="form-box" required="required" placeholder="Asunto" type="text">
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<textarea class="form-box" placeholder="message" name="message" required="required"></textarea>
+						<input value="Enviar" type="submit">
+					</div>
+				</div>				
+			</div>
+		</form>
+	</section>
+	<section class="mark-box">
+		<div class="container">
+			<div class="row img-box">
+				<div class="col-sm-3 col-6">
+					<img src="./images/marca1.png">
+				</div>
+				<div class="col-sm-3 col-6">
+					<img src="./images/marca2.png">
+				</div>
+				<div class="col-sm-3 col-6">
+					<img src="./images/marca3.png">
+				</div>
+				<div class="col-sm-3 col-6">
+					<img src="./images/marca4.png">
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="mapa">
+		<img src="./images/mapa.png">
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="bottom_bg">
+				<div class="left address">
+					<span>2019 © Copyright, ECOWUAYLLA BIOMARKET ®. Todos los derechos reservados.</span>
+				</div>
+				<div class="right address">
+					<i class="fab fa-facebook-f"></i>
+					<span>Síguenos en Facebook</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	</div>
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<!-- Default-JavaScript-File -->
+
+	<script src="js/bootstrap.js"></script>
+	<!-- Necessary-JavaScript-File-For-Bootstrap -->
+	<script src="js/owl.carousel.js"></script>
+	<script>
+		var owl = $('.owl-carousel');
+		owl.owlCarousel({
+			items: 3,
+			loop: true,
+			margin: 10,
+			autoplay: true,
+			autoplayTimeout: 1000,
+			autoplayHoverPause: true,
+			responsive: {
+				0: {
+					items: 1
+				},
+				600: {
+					items: 2
+				},
+				1000: {
+					items: 3
+				}
+			}
+		});
+		$('.play').on('click', function () {
+			owl.trigger('play.owl.autoplay', [1000])
+		})
+		$('.stop').on('click', function () {
+			owl.trigger('stop.owl.autoplay')
+		})
+	</script>
+	<!-- //Owl-Carousel-JavaScript -->
+
+</body>
+</html>

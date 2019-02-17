@@ -1,0 +1,6 @@
+*.pdf
+.pdf
+.*7z
+./comprimido/
+**/comprimido/
+Recursos WEB/
