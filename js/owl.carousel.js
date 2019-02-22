@@ -2653,22 +2653,22 @@
 			}, this),
 			'mouseover.owl.autoplay': $.proxy(function() {
 				if (this._core.settings.autoplayHoverPause && this._core.is('rotating')) {
-					this.play();
+					//this.play();
 				}
 			}, this),
 			'mouseleave.owl.autoplay': $.proxy(function() {
 				if (this._core.settings.autoplayHoverPause && this._core.is('rotating')) {
-					this.play();
+					//this.play();
 				}
 			}, this),
 			'touchstart.owl.core': $.proxy(function() {
 				if (this._core.settings.autoplayHoverPause && this._core.is('rotating')) {
-					this.play();
+					//this.play();
 				}
 			}, this),
 			'touchend.owl.core': $.proxy(function() {
 				if (this._core.settings.autoplayHoverPause) {
-					this.play();
+					//this.play();
 				}
 			}, this)
 		};
