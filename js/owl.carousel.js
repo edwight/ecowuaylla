@@ -2653,7 +2653,7 @@
 			}, this),
 			'mouseover.owl.autoplay': $.proxy(function() {
 				if (this._core.settings.autoplayHoverPause && this._core.is('rotating')) {
-					this.pause();
+					this.play();
 				}
 			}, this),
 			'mouseleave.owl.autoplay': $.proxy(function() {
@@ -2663,7 +2663,7 @@
 			}, this),
 			'touchstart.owl.core': $.proxy(function() {
 				if (this._core.settings.autoplayHoverPause && this._core.is('rotating')) {
-					this.pause();
+					this.play();
 				}
 			}, this),
 			'touchend.owl.core': $.proxy(function() {
