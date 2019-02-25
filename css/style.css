@@ -534,5 +534,9 @@ i.fab,i.fas{
     .multicolumna p{
         padding: 0 !important;
     }
+    .cataloge .item h2 {
+        font-size: 1em;
+    }
+
 }
 
